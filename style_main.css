@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: red;
 }
 
 div#{
@@ -20,6 +20,7 @@ div#{
     left:0px;
     margin: none;
     padding: none;
+    color: green;
 }
 
 header {

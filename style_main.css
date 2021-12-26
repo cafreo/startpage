@@ -1,0 +1,208 @@
+@font-face {
+    font-family: dream;
+    src: url(./fonts/dream\ orphans\ bd.otf);
+}
+
+body {
+    background-color: black;
+}
+
+div#bg {
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:0;
+    top:0px;
+    left:0px;
+    margin: none;
+    padding: none;
+}
+
+header {
+    background-color: transparent;
+    color: #202020;
+    font-family: dream;
+    font-size: 6vh;
+    font-weight: bold;
+    filter: drop-shadow(3px 3px 3px #333333);
+    letter-spacing: 3px;
+    position: relative;
+    z-index:1;
+    text-align: center;
+    margin: -3vh 0 -3vh 0;
+}
+
+article {
+    background-color: transparent;
+    position: relative;
+    z-index:1;
+}
+
+.tile-grid {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.tile {
+    background-color: tomato;
+    text-align: center;
+    border-radius: 3vh;
+    min-width: 8vh;
+    min-height: 6vw;
+    max-width: 18vw;
+    max-height: 28vw;
+    margin: 1vh;
+    padding: 1.5vh;
+    justify-content: center;
+    display: block;
+
+    transition: transform .16s ease-in-out;
+}
+
+.tile:hover {
+    transform: scale(1.12);
+}
+
+.tile:active {
+    transform: scale(0.85);
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+div#tile1 {
+    background-color: #AD1818;
+}
+
+div#tile2 {
+    background-color: #D47F00;
+}
+
+div#tile3 {
+    background-color: #740006;
+}
+
+div#tile4 {
+    background-color: #3E1E79;
+}
+
+div#tile5 {
+    background-color: #2C343C;
+}
+
+div#tile6 {
+    background-color: #AA0000;
+}
+
+nav {
+    background-color: transparent;
+    position: sticky;
+    bottom: 0;
+    z-index:1;
+    margin: 2vh 2vh;
+    padding: 2vh 0vh;
+}
+
+.searchbar-main {
+    background-color: #222222;
+    color: #dddddd;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    font-size: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 1vh 0vh 2vh;
+    border-radius: 2vh;
+    border: 2pt solid #487cff;
+    height: 6vh;
+}
+
+input.searchbar {
+    background-color: transparent;
+    color: #dddddd;
+    font-size: 3vh;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input.searchbar:focus {
+    color: #dddddd;
+    
+}
+
+::placeholder {
+    color: #487cff;
+}
+
+.searchbar-go {
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid #487cff80;
+    padding: 1vh 1vh 1vh 1vh;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+
+    transition: filter .2s ease-in-out;
+}
+
+.searchbar-go:hover {
+    filter: invert(0%) sepia(20%) saturate(200%) hue-rotate(3deg) brightness(107%) contrast(104%);
+}
+
+.searchbar-go img {
+    height: 100%;
+}
+
+.searchbar-clear {
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid #487cff80;
+    padding: 1vh 0.5vh 1vh 1vh;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    
+    transition: filter .2s ease-in-out;
+}
+
+.searchbar-clear:hover {
+    filter: invert(0%) sepia(20%) saturate(200%) hue-rotate(3deg) brightness(107%) contrast(104%);
+
+}
+
+.searchbar-clear img {
+    height: 100%;
+}
+
+.search-icons-color {
+    filter: invert(20%) sepia(40%) saturate(3222%) hue-rotate(211deg) brightness(95%) contrast(87%);
+}
+
+footer {
+    background-color: transparent;
+    color: rgb(125, 125, 125);
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    z-index:1;
+    left: 0px;
+}

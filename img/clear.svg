@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#000000;stroke-width:18;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+	<g class="st1">
+		<path d="M52,16.5c19.5,0,35.5,15.9,35.5,35.5S71.5,87.5,52,87.5S16.5,71.5,16.5,52S32.5,16.5,52,16.5 M52,0C23.3,0,0,23.3,0,52
+			s23.3,52,52,52s52-23.3,52-52S80.7,0,52,0L52,0z"/>
+	</g>
+	<g class="st1">
+		<line class="st2" x1="84" y1="84" x2="119" y2="119"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<path d="M106.4,120.6l-99-99c-3.9-3.9-3.9-10.2,0-14.1l0,0c3.9-3.9,10.2-3.9,14.1,0l99,99c3.9,3.9,3.9,10.2,0,14.1l0,0
+		C116.7,124.5,110.3,124.5,106.4,120.6z"/>
+	<path d="M7.4,106.4l99-99c3.9-3.9,10.2-3.9,14.1,0l0,0c3.9,3.9,3.9,10.2,0,14.1l-99,99c-3.9,3.9-10.2,3.9-14.1,0l0,0
+		C3.5,116.7,3.5,110.3,7.4,106.4z"/>
+</g>
+</svg>

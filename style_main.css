@@ -1,14 +1,14 @@
 @font-face {
     font-family: dream;
-    src: url(./fonts/dream\ orphans\ bd.otf);
+    src: url(/fonts/dream\ orphans\ bd.otf);
 }
 
 body {
     background-color: black;
 }
 
-div#bg {
-    background-image: url("../img/bg.png");
+div#{
+    background-image: url("/img/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

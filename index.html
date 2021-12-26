@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="style_main.css">
+    <link rel="icon" href="./img/icon.png">
+</head>
+
+<body>
+    <div id="bg">
+        
+    </div>
+    <header>
+        <p>whalecum, cafreo!</p>
+    </header>
+
+    <article>
+        <div class="tile-grid">
+        <a href="https://www.yewtu.be/"><div class="tile" id="tile1">
+            <img src="./img/youtube.png" alt="tile1">
+        </div>
+        </a>
+        <a href="https://www.amazon.de/"><div class="tile" id="tile2">
+            <img src="./img/amazon.png" alt="tile1">
+        </div>
+        </a>
+        <a href="https://www.netflix.com/"><div class="tile" id="tile3">
+            <img src="./img/netflix.png" alt="tile1">
+        </div>
+        </a>
+        <a href="https://www.twitch.tv/"><div class="tile" id="tile4">
+            <img src="./img/twitch.png" alt="tile1">
+        </div>
+        </a>
+        <a href="https://mail.google.com/mail/u/0/"><div class="tile" id="tile5">
+            <img src="./img/gmail.png" alt="tile1">
+        </div>
+        </a>
+        <a href="https://mega.nz/"><div class="tile" id="tile6">
+            <img src="./img/mega.png" alt="tile1">
+        </div>
+        </a>
+        <!--<div class="tile" id="tile7">
+            <img src="./img/youtube.png" alt="tile1">
+        </div>
+        <div class="tile" id="tile8">
+            <img src="./img/youtube.png" alt="tile1">
+        </div>-->
+    </div>
+    </article>
+
+    <nav>
+        <div class="searchbar-main">
+            <input type="text" placeholder="Search for..." class="searchbar" title="search" id="searchbarid">
+            <button type="button" class="searchbar-go" id="searchbar-goid">
+                <img src="./img/magnifier.svg" class="search-icons-color">
+            </button>
+            <button type="button" class="searchbar-clear" onclick="document.getElementById('searchbarid').value =''">
+                <img src="./img/clear.svg" class="search-icons-color">
+            </button>
+        </div>
+
+        <script>
+            var input = document.getElementById("searchbarid");
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+               event.preventDefault();
+               document.getElementById("searchbar-goid").click();
+              }
+            });
+        </script>
+
+        <script>
+            let searchtext = document.querySelector('.searchbar');
+            let searchbarrun = document.querySelector('.searchbar-go');
+
+            searchbarrun.onclick = function() {
+                let url ='https://searx.be/search?q='+searchtext.value;
+                window.open(url,"_self");
+                document.getElementById('searchbarid').value ='';
+            }
+        </script>
+
+    </nav>
+
+    <footer>
+        <p>Powered by cafreo-os</p>
+    </footer>
+
+</body>
+</html>

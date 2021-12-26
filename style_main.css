@@ -4,10 +4,10 @@
 }
 
 body {
-    background-color: red;
+    background-color: black;
 }
 
-div#{
+div#bg{
     background: url("/img/bg.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ div#{
 
 header {
     background-color: transparent;
-    color: #202020;
+    color: rgb(32, 32, 32);
     font-family: dream;
     font-size: 6vh;
     font-weight: bold;

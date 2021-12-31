@@ -3,6 +3,11 @@
     src: url(./fonts/dream\ orphans\ bd.otf);
 }
 
+@font-face {
+    font-family: nimbus;
+    src: url(./fonts/nimbus\ bold.otf);
+}
+
 body {
     background-color: black;
 }
@@ -52,6 +57,15 @@ article {
     vertical-align: middle;
 }
 
+.tile-grid-wide {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 .tile {
     background-color: tomato;
     text-align: center;
@@ -82,6 +96,53 @@ article {
     vertical-align: middle;
 }
 
+.tile_wide {
+    background-color: tomato;
+    text-align: center;
+    border-radius: 3vh;
+    min-width: 6vh;
+    max-width: 62vw;
+    min-height: 3vw;
+    max-height: 10vw;
+    margin: 2vh 2vh 0vh 2vh;
+    padding: 0vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    transition: transform .16s ease-in-out;
+}
+
+.tile_wide:hover {
+    transform: scale(1.10);
+}
+
+.tile_wide:active {
+    transform: scale(0.90);
+}
+
+.tile_wide img {
+    width: 15%;
+    height: 15%;
+    vertical-align: left;
+    padding: 0vh 0vh;
+}
+
+.tile_wide p {
+    color: rgb(32, 32, 32);
+    font-size: 26px;
+    font-family: nimbus;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0.5vh;
+    vertical-align: left;
+}
+
+.tile_wide a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
 div#tile1 {
     background-color: #AD1818;
 }
@@ -104,6 +165,14 @@ div#tile5 {
 
 div#tile6 {
     background-color: #AA0000;
+}
+
+div#tile7 {
+    background-color: #1071a6;
+}
+
+div#tile8 {
+    background-color: #215A8B;
 }
 
 nav {

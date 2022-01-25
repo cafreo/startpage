@@ -160,7 +160,7 @@ div#tile4 {
 }
 
 div#tile5 {
-    background-color: #2C343C;
+    background-color: #630015;
 }
 
 div#tile6 {
@@ -180,7 +180,7 @@ nav {
     position: sticky;
     bottom: 0;
     z-index:1;
-    margin: 2vh 2vh;
+    margin: 2vh 2vh 0vh 2vh;
     padding: 2vh 0vh;
 }
 
@@ -265,6 +265,54 @@ input.searchbar:focus {
 
 .search-icons-color {
     filter: invert(20%) sepia(40%) saturate(3222%) hue-rotate(211deg) brightness(95%) contrast(87%);
+}
+
+.tile-grid-bubbles {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.bubble {
+    background-color: yellow;
+    text-align: center;
+    border-radius: 100%;
+    min-width: 4vh;
+    min-height: 4vh;
+    max-width: 3vw;
+    max-height: 3vw;
+    margin: 0.5vh;
+    justify-content: center;
+    display: block;
+
+    transition: transform .16s ease-in-out;
+}
+
+.bubble:hover {
+    transform: scale(1.15) rotate(15deg);
+}
+
+.bubble:active {
+    transform: scale(0.85) rotate(-15deg);
+}
+
+
+.bubble img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+#bubble1 {
+    background-color: #ff6060;
+}
+
+#bubble2 {
+    background-color: #0882c8;
 }
 
 footer {

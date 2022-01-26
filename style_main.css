@@ -312,6 +312,10 @@ input.searchbar:focus {
 }
 
 #bubble2 {
+    background-color: #007793;
+}
+
+#bubble3 {
     background-color: #0882c8;
 }
 

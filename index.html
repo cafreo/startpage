@@ -16,11 +16,14 @@
     </header>
 
     <article>
-        <div class="tile-grid">
+
+        <!--TILES-->
+
+        <div class="tile-grid"> <!--grid for app tiles to display-->
         <a href="https://www.yewtu.be/">
         <!--<a href="https://invidious.snopyta.org/">--> 
             
-            <div class="tile" id="tile1">
+            <div class="tile" id="tile1"> <!--class "tile" for universal css rules for all tiles; id "tileX" for individual css rules-->
             <img src="./img/youtube.png" alt="tile1">
         </div>
         </a>
@@ -45,35 +48,40 @@
         </div>
         </a>
     </div>
-    <div class="tile-grid-wide">
+
+    <!--WIDE TILES-->
+
+    <div class="tile-grid-wide"> <!--grid for wide app tiles to display-->
     	<a href="https://alternativeto.net/"><div class="tile_wide" id="tile7">
-            <img src="./img/alternativeto.png" alt="tile7">
+            <img src="./img/alternativeto.png" alt="wide_tile1">
             <p>alternative.to</p>
         </div>
         </a>
         <a href="https://community.chocolatey.org/"><div class="tile_wide" id="tile8">
-            <img src="./img/chocolatey.png" alt="tile8">
+            <img src="./img/chocolatey.png" alt="wide_tile2">
             <p>chocolatey</p>
         </div>
         </a>
     </div>
     </article>
 
+<!--SEARCHBAR-->
+
     <nav>
-        <div class="searchbar-main">
-            <input type="text" placeholder="Search for..." class="searchbar" title="search" id="searchbarid" autofocus>
+        <div class="searchbar-main"> <!--main div for universal css rules of searchbar-->
+            <input type="text" placeholder="Search for..." class="searchbar" title="search" id="searchbarid" autofocus> 
             <button type="button" class="searchbar-go" id="searchbar-goid">
                 <img src="./img/magnifier.svg" class="search-icons-color">
             </button>
-            <button type="button" class="searchbar-clear" onclick="document.getElementById('searchbarid').value =''">
+            <button type="button" class="searchbar-clear" onclick="document.getElementById('searchbarid').value =''"> <!--clear searchbar input field-->
                 <img src="./img/clear.svg" class="search-icons-color">
             </button>
         </div>
 
         <script>
-            var input = document.getElementById("searchbarid");
+            var input = document.getElementById("searchbarid"); /*store the text written in the searchbar in var input*/
             input.addEventListener("keyup", function(event) {
-              if (event.keyCode === 13) {
+              if (event.keyCode === 13) { /*keyCode === 13 is "Enter" key; if "Enter" is pressed, do the same thing as clicking on the search button (searchbar-goid)*/
                event.preventDefault();
                document.getElementById("searchbar-goid").click();
               }
@@ -85,16 +93,18 @@
             let searchbarrun = document.querySelector('.searchbar-go');
 
             searchbarrun.onclick = function() {
-                let url ='https://searx.be/search?q='+searchtext.value;
-                window.open(url,"_self");
-                document.getElementById('searchbarid').value ='';
+                let url ='https://searx.be/search?q='+searchtext.value; /*go to search engine url and add the text from the searchbar to the query*/
+                window.open(url,"_self"); /*open link in current tab*/
+                document.getElementById('searchbarid').value =''; /*clear the searchbar input*/
             }
         </script>
 
     </nav>
 
+<!--BUBBLES-->
+
     <article>
-        <div class="tile-grid-bubbles">
+        <div class="tile-grid-bubbles"> <!--grid for app bubbles to display-->
 
             <a href="http://192.168.178.11/admin/index.php">
                 <div class="bubble" id="bubble1">
@@ -117,7 +127,7 @@
     </article>
 
     <footer>
-        <a href="https://github.com/whosthispuppy/startpage"><p>https://github.com/whosthispuppy/startpage</p></a>
+        <a href="https://github.com/whosthispuppy/startpage"><p>https://github.com/whosthispuppy/startpage</p></a> <!--link to repository-->
     </footer>
 
 </body>

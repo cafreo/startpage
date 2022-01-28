@@ -1,3 +1,5 @@
+/*IMPORT FONTS*/
+
 @font-face {
     font-family: dream;
     src: url(./fonts/dream\ orphans\ bd.otf);
@@ -7,6 +9,8 @@
     font-family: nimbus;
     src: url(./fonts/nimbus\ bold.otf);
 }
+
+/*BODY AND BACKGROUND*/
 
 body {
     background-color: black;
@@ -28,6 +32,8 @@ div#bg {
     color: green;
 }
 
+/*HEADER*/
+
 header {
     background-color: transparent;
     color: rgb(32, 32, 32);
@@ -41,6 +47,8 @@ header {
     text-align: center;
     margin: -3vh 0 -3vh 0;
 }
+
+/*ARTICLE: TILES AND WIDE TILES*/
 
 article {
     background-color: transparent;
@@ -167,13 +175,15 @@ div#tile6 {
     background-color: #AA0000;
 }
 
-div#tile7 {
+div#wide_tile1 {
     background-color: #1071a6;
 }
 
-div#tile8 {
+div#wide_tile2 {
     background-color: #215A8B;
 }
+
+/*NAV: SEARCHBAR*/
 
 nav {
     background-color: transparent;
@@ -267,6 +277,8 @@ input.searchbar:focus {
     filter: invert(20%) sepia(40%) saturate(3222%) hue-rotate(211deg) brightness(95%) contrast(87%);
 }
 
+/*ARTICLE: BUBBLES*/
+
 .tile-grid-bubbles {
     background-color: transparent;
     display: flex;
@@ -318,6 +330,8 @@ input.searchbar:focus {
 #bubble3 {
     background-color: #0882c8;
 }
+
+/*FOOTER: LINK TO REPOSITORY*/
 
 footer {
     background-color: transparent;

@@ -2,5 +2,3 @@
     <h1>startpage</h1>
     <p><img width=100% src="/screenshots/screens1.png"/></p>
 </div>
-
-https://whosthispuppy.github.io/startpage/

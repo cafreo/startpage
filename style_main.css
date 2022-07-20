@@ -332,7 +332,7 @@ input.searchbar:focus {
 }
 
 #bubble4 {
-    background-color: #0882c8;
+    background-color: #292929;
 }
 
 #bubble5 {
@@ -340,7 +340,11 @@ input.searchbar:focus {
 }
 
 #bubble6 {
-    background-color: #1a6daf;
+    background-color: #0882c8;
+}
+
+#bubble7 {
+    background-color: #c3af00;
 }
 
 /*FOOTER: LINK TO REPOSITORY*/

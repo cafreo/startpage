@@ -340,10 +340,14 @@ input.searchbar:focus {
 }
 
 #bubble6 {
-    background-color: #0882c8;
+    background-color: #005fb8;
 }
 
 #bubble7 {
+    background-color: #0882c8;
+}
+
+#bubble8 {
     background-color: #c3af00;
 }
 

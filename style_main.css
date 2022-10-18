@@ -108,14 +108,14 @@ article {
     background-color: tomato;
     text-align: center;
     border-radius: 6vh;
-    min-width: 20vw;
-    max-width: 20vw;
+    min-width: 6vh;
+    max-width: 64vw;
     min-height: 3vw;
     max-height: 10vw;
     margin: 2vh 2vh 0vh 2vh;
     padding: 0vh;
     justify-content: center;
-    display: block;
+    display: flex;
     align-items: center;
 
     transition: transform .16s ease-in-out;
@@ -133,7 +133,7 @@ article {
     width: 12%;
     height: 12%;
     vertical-align: left;
-    padding: 0vw 0.5vw 0vh 0vh;
+    padding: 0vw 0vw 0vh 0vh;
     display: flex;
 }
 
@@ -144,11 +144,11 @@ article {
     letter-spacing: 2px;
     font-weight: bold;
     text-decoration: none;
-    padding: 0.3vw 0vw 0vw 0vw;
-    margin: 0;
+    /*padding: 0.3vw 0vw 0vw 0vw;*/
+    margin: 0.5vh;
     vertical-align: left;
-    justify-content: center;
-    display: flex;
+    /*justify-content: center;*/
+    /*display: flex;*/
 }
 
 .tile_wide a:hover, a:visited, a:link, a:active{

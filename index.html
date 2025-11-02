@@ -1,164 +1,127 @@
 <!doctype html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-    <title>New Tab</title>
-    <link rel="stylesheet" type="text/css" href="style_main.css"> <!--link to css file-->
-    <link rel="icon" href="./img/icon.png"> <!--set favicon-->
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>New Tab</title>
+        <link rel="stylesheet" type="text/css" href="style_main.css"> <!--link to css file-->
+        <link rel="icon" href="./img/icon.png"> <!--set favicon-->
+    </head>
 
-<body>
-    <div id="bg"> <!--background div-container for background-image-->
-    </div>
-    <header>
-        <p>whalecum, cafreo!</p>
-    </header>
-
-    <article>
-
-        <!--TILES-->
-
-        <div class="tile-grid"> <!--grid for app tiles to display-->
-        <a href="https://invidious.protokolla.fi/">
-        <!--<a href="https://invidious.snopyta.org/">--> 
-            
-            <div class="tile" id="tile1"> <!--class "tile" for universal css rules for all tiles; id "tileX" for individual css rules-->
-            <img src="./img/youtube.png" alt="tile1">
+    <body>
+        <div id="bg"> <!--background div-container for background-image-->
         </div>
-        </a>
-        <a href="https://www.amazon.de/"><div class="tile" id="tile2">
-            <img src="./img/amazon.png" alt="tile2">
-        </div>
-        </a>
-        <a href="https://s.to/"><div class="tile" id="tile3">
-            <img src="./img/netflix.png" alt="tile3">
-        </div>
-        </a>
-        <a href="https://www.twitch.tv/"><div class="tile" id="tile4">
-            <img src="./img/twitch.png" alt="tile4">
-        </div>
-        </a>
-        <a href="https://mail.tutanota.com/"><div class="tile" id="tile5">
-            <img src="./img/tutanota.png" alt="tile5">
-        </div>
-        </a>
-        <a href="https://mega.nz/"><div class="tile" id="tile6">
-            <img src="./img/mega.png" alt="tile6">
-        </div>
-        </a>
-    </div>
+        <header>
+            <p>whalecum, cafreo!</p>
+        </header>
 
-    <!--WIDE TILES-->
+        <article>
 
-    <div class="tile-grid-wide"> <!--grid for wide app tiles to display-->
-    	<a href="https://alternativeto.net/"><div class="tile_wide" id="wide_tile1">
-            <img src="./img/alternativeto.png" alt="wide_tile1">
-            <p>alternative.to</p>
-        </div>
-        </a>
-        <a href="https://paypal.com/"><div class="tile_wide" id="wide_tile2">
-            <img src="./img/paypal.png" alt="wide_tile2">
-            <p>paypal</p>
-        </div>
-        </a>
-    </div>
-    </article>
+            <!--TILES-->
 
-<!--SEARCHBAR-->
+            <div class="tile-grid"> <!--grid for app tiles to display-->
+                <a href="https://invidious.protokolla.fi/">
+                    <!--<a href="https://invidious.snopyta.org/">--> 
 
-    <nav>
-        <div class="searchbar-main"> <!--main div for universal css rules of searchbar-->
-            <input type="text" placeholder="Search for..." class="searchbar" title="search" id="searchbarid" autofocus> 
-            <button type="button" class="searchbar-go" id="searchbar-goid">
-                <img src="./img/magnifier.svg" class="search-icons-color">
-            </button>
-            <button type="button" class="searchbar-clear" onclick="document.getElementById('searchbarid').value =''"> <!--clear searchbar input field-->
-                <img src="./img/clear.svg" class="search-icons-color">
-            </button>
-        </div>
-
-        <script>
-            var input = document.getElementById("searchbarid"); /*store the text written in the searchbar in var input*/
-            input.addEventListener("keyup", function(event) {
-              if (event.keyCode === 13) { /*keyCode === 13 is "Enter" key; if "Enter" is pressed, do the same thing as clicking on the search button (searchbar-goid)*/
-               event.preventDefault();
-               document.getElementById("searchbar-goid").click();
-              }
-            });
-        </script>
-
-        <script>
-            let searchtext = document.querySelector('.searchbar');
-            let searchbarrun = document.querySelector('.searchbar-go');
-
-            searchbarrun.onclick = function() {
-                let url ='https://searx.be/search?q='+searchtext.value; /*go to search engine url and add the text from the searchbar to the query*/
-                window.open(url,"_self"); /*open link in current tab*/
-                document.getElementById('searchbarid').value =''; /*clear the searchbar input*/
-            }
-        </script>
-
-    </nav>
-
-<!--BUBBLES-->
-
-    <article>
-        <div class="tile-grid-bubbles"> <!--grid for app bubbles to display-->
-
-            <a href="http://pihole.cn">
-                <div class="bubble" id="bubble1">
-                <img src="./img/pihole.png" alt="bubble1">
+                    <div class="tile" id="tile1"> <!--class "tile" for universal css rules for all tiles; id "tileX" for individual css rules-->
+                        <img src="./img/youtube.png" alt="tile1">
+                    </div>
+                    </a>
+                    <a href="https://www.amazon.de/"><div class="tile" id="tile2">
+                            <img src="./img/amazon.png" alt="tile2">
+                        </div>
+                    </a>
+                    <a href="https://s.to/"><div class="tile" id="tile3">
+                            <img src="./img/netflix.png" alt="tile3">
+                        </div>
+                    </a>
+                    <a href="https://www.twitch.tv/"><div class="tile" id="tile4">
+                            <img src="./img/twitch.png" alt="tile4">
+                        </div>
+                    </a>
+                    <a href="https://mail.tutanota.com/"><div class="tile" id="tile5">
+                            <img src="./img/tutanota.png" alt="tile5">
+                        </div>
+                    </a>
+                    <a href="https://mega.nz/"><div class="tile" id="tile6">
+                            <img src="./img/mega.png" alt="tile6">
+                        </div>
+                    </a>
             </div>
 
-            <a href="http://portainer.cs/">
-                <div class="bubble" id="bubble2">
-                <img src="./img/docker.png" alt="bubble2">
-        </div>
+            <!--WIDE TILES-->
 
-            <a href="http://omv.cs/">
+            <div class="tile-grid-wide"> <!--grid for wide app tiles to display-->
+                <a href="https://alternativeto.net/"><div class="tile_wide" id="wide_tile1">
+                        <img src="./img/alternativeto.png" alt="wide_tile1">
+                        <p>alternative.to</p>
+                    </div>
+                </a>
+                <a href="https://paypal.com/"><div class="tile_wide" id="wide_tile2">
+                        <img src="./img/paypal.png" alt="wide_tile2">
+                        <p>paypal</p>
+                    </div>
+                </a>
+            </div>
+        </article>
+
+        <!--BUBBLES-->
+
+        <article>
+            <div class="tile-grid-bubbles"> <!--grid for app bubbles to display-->
+
+                <a href="http://pihole.cn">
+                    <div class="bubble" id="bubble1">
+                        <img src="./img/pihole.png" alt="bubble1">
+                    </div>
+                </a>
+                <a href="http://portainer.cs/">
+                    <div class="bubble" id="bubble2">
+                        <img src="./img/docker.png" alt="bubble2">
+                    </div>
+                </a>
+                <a href="http://omv.cs/">
                     <div class="bubble" id="bubble3">
-                    <img src="./img/omv2.png" alt="bubble3">
+                        <img src="./img/omv2.png" alt="bubble3">
+                    </div>
+                </a>
+                <a href="http://nginxpm.cs/">
+                    <div class="bubble" id="bubble4">
+                        <img src="./img/nginxpm.png" alt="bubble4">
+                    </div>
+                </a>
+                <a href="http://navidrome.cs/">
+                    <div class="bubble" id="bubble5">
+                        <img src="./img/navidrome.png" alt="bubble5">
+                    </div>
+                </a>
+                <a href="http://lidarr.cs/">
+                    <div class="bubble" id="bubble6">
+                        <img src="./img/lidarr.png" alt="bubble6">
+                    </div>
+                </a>
+                <a href="http://qbt.cs/">
+                    <div class="bubble" id="bubble7">
+                        <img src="./img/qbt.png" alt="bubble7">
+                    </div>
+                </a>
+                <a href="https://127.0.0.1:8384/">
+                    <div class="bubble" id="bubble8">
+                        <img src="./img/syncthing.png" alt="bubble8">
+                    </div>
+                </a>
+                <a href="http://router.cx/">
+                    <div class="bubble" id="bubble9">
+                        <img src="./img/router.png" alt="bubble9">
+                    </div>
+                </a>    
             </div>
 
-        <a href="http://nginxpm.cs/">
-                <div class="bubble" id="bubble4">
-                <img src="./img/nginxpm.png" alt="bubble4">
-                </div>
+        </article>
 
-        <a href="http://navidrome.cs/">
-                <div class="bubble" id="bubble5">
-                <img src="./img/navidrome.png" alt="bubble5">
-                </div>
+        <footer>
+            <a href="https://github.com/cafreo/startpage"><p>https://github.com/cafreo/startpage</p></a> <!--link to repository-->
+        </footer>
 
-        <a href="http://lidarr.cs/">
-                <div class="bubble" id="bubble6">
-                <img src="./img/lidarr.png" alt="bubble6">
-                </div>
-
-        <a href="http://qbt.cs/">
-                <div class="bubble" id="bubble7">
-                <img src="./img/qbt.png" alt="bubble7">
-                </div>
-
-        <a href="https://127.0.0.1:8384/">
-            <div class="bubble" id="bubble8">
-            <img src="./img/syncthing.png" alt="bubble8">
-             </div>
-
-        <a href="http://router.cx/">
-            <div class="bubble" id="bubble9">
-            <img src="./img/router.png" alt="bubble9">
-            </div>
-        </div>
-
-    </div>
-
-    </article>
-
-    <footer>
-        <a href="https://github.com/cafreo/startpage"><p>https://github.com/cafreo/startpage</p></a> <!--link to repository-->
-    </footer>
-
-</body>
+    </body>
 </html>
